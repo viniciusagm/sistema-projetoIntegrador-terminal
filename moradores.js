@@ -110,4 +110,4 @@ export function buscarMoradorPorId(id) {
     } else {
         console.log('id inexistente...')
     }
-}
+} // função criada
