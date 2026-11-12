@@ -92,3 +92,22 @@ export function moradorExiste (bloco, apartamento) {
     return existeOuNao
 }
 
+// Criando a função 'buscar morador por id' -> Feito por Vinícius Augusto
+export function buscarMoradorPorId(id) {
+    
+    const acharId = entradaNumero('Digite o id que deseja buscar: ')
+    const idExistente = moradores.find(morador => morador.id === acharId);
+
+    if (acharId) {
+        console.log("\n morador identificado! ")
+        
+        console.log(`id: ${idExistente.id}`);
+        console.log(`nome: ${idExistente.nome}`)
+        console.log(`bloco: ${idExistente.bloco}`)
+        console.log(`apartamento: ${idExistente.apartamento}`)
+        console.log(`telefone: ${idExistente.telefone}`)
+        console.log(`tipo: ${idExistente.tipo}`)
+    } else {
+        console.log('id inexistente...')
+    }
+}
